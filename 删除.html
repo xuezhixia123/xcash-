@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xcash的网页</title>
+    
+    <meta http-equiv="refresh" content="30"> 刷新页面
+    <link rel="shortcut icon" href="/Users/xcash/Pictures/WechatIMG674.jpg">   网页图标文字显示   
+   
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五颜六色的星星拖尾特效</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+            animation: fadeOut 1s ease-out forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+  
+    <form action="/" method="post">
+     <label for="name">用户名：</label>   
+<input type="text"style="background-color:bisque;border-color:black;color:black;font-size:18px;" id="name" name="name"  required>
+<br>
+<label for="email">邮箱：</label>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="password">密码：</label>
+<input type="password" id="password" >
+
+
+
+<br>
+
+<label>性别:</label>
+  <input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">男</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">女</label>
+    
+  <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <label for="subscribe">订阅推送信息</label>
+
+  <br>
+  <label for="country">国家:</label>
+  <select id="country" name="countrys:">
+      <option value="cn">中国</option> 
+    <option value="eg">english</option>
+    <option value="jp">日本語</option>
+    </select>
+    <br>
+    <input type="submit" value="提交">
+    </form>
+  
+  
+  <p style="text-align: right; color: purple;">这是一段右对齐的文本。</p>
+
+
+
+   
+   
+   
+   
+    <a href="#xcash">访问有用的提示部分</a>         
+    <a href="#tips"style="color: red;">访问有用的提示部分</a>
+ <a href="#section2" style="color: red;">跳转</a>
+<a href="https://42.202.39.72/subos_1.0.1_winia32.exe" download>下载</a>
+<!-- 在页面中的某个位置 -->
+
+
+<span style="color: rgb(227, 19, 19);">极光与雪地中的雪橇犬</span>
+   
+<img  src="https://tokensoft.mypinata.cloud/ipfs/QmSLEvVE5RCc4MBqX58tfneCk8kK8PKiy2gyXV9cwdSyaZ "usemap="#image-map" alt="极光牙办法与雪地中的雪橇犬" width="400" height="400"> 
+<map name="image-map">
+    <area target="_blank" alt="1" href="https://www.image-map.net/" coords="200,200,50" shape="circle">
+</map>
+<br>
+<p>这是一个图片点击链接</p>
+<a href="https://discord.com/" target="_blank" style="color: purple;">
+    <img style="border: 10px solid yellow ;" src="/Users/xcash/Pictures/WechatIMG674.jpg" alt="discord" width="100" height="100" >
+
+</a>
+
+
+    <div style="opacity:0.4;position:absolute;left:120px;width:100px;height:200px;background-color:rgb(218, 139, 139)"></div>   背景色块颜色
+<a name="section2"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<p id="xcash">访问有用的提示部分</p>
+
+<a id="tips">有用的提示部分</a>
+<a href="#section2"></body></a>
+<pre>wiiwiiwiiwiwiiwiwiw</pre>
+
+<script>
+    document.addEventListener('mousemove', function(e) {
+        // 创建星星元素
+        const star = document.createElement('div');
+        star.classList.add('star');
+        document.body.appendChild(star);
+
+        // 设置星星的随机颜色
+        const colors = ['red', 'blue', 'green', 'yellow', 'pink', 'purple', 'orange'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        star.style.backgroundColor = randomColor;
+        star.style.color = randomColor;
+
+        // 设置星星出现的位置为鼠标的当前位置
+        star.style.left = `${e.pageX - 2.5}px`;
+        star.style.top = `${e.pageY - 2.5}px`;
+
+        // 使星星消失
+        setTimeout(() => {
+            star.remove();
+        }, 1000);  // 星星在1秒后消失
+    });
+</script>
+
+</body>
+</html>
